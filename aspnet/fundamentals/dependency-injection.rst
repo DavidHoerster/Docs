@@ -185,7 +185,7 @@ With regard to data access specifically, you can easily inject Entity Framework 
 Replacing the default services container
 ----------------------------------------
 
-The built-in services container is mean to serve the basic needs of the framework and most consumer applications built on it. However, developers who wish to replace the built-in container with their preferred container can easily do so. The ``ConfigureServices`` method typically returns ``void``, but if its signature is changed to return ``IServiceProvider``, a different container can be configured and returned. There are `many IOC containers available for .NET <https://github.com/danielpalme/IocPerformance/blob/master/README.md>`_. This article will attempt to add links to DNX implementations of containers as they become available. In this example, the `Autofac <http://autofac.org/>`_ package is used.
+The built-in services container is meant to serve the basic needs of the framework and most consumer applications built on it. However, developers who wish to replace the built-in container with their preferred container can easily do so. The ``ConfigureServices`` method typically returns ``void``, but if its signature is changed to return ``IServiceProvider``, a different container can be configured and returned. There are `many IOC containers available for .NET <https://github.com/danielpalme/IocPerformance/blob/master/README.md>`_. This article will attempt to add links to DNX implementations of containers as they become available. In this example, the `Autofac <http://autofac.org/>`_ package is used.
 
 First, add the appropriate container package(s) to the dependencies property in project.json:
 
